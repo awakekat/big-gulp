@@ -1,7 +1,5 @@
-node_modules
 dist
 big-gulp.sublime-project
-h2j
 uni-site.sublime-workspace
 
 # Created by https://www.gitignore.io/api/osx,node,bower
