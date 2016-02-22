@@ -26,24 +26,41 @@ header {
   span {
     color: $primary;
   }
-  ul.navigation {
-    padding-top: 12px;
-    font-size: 13px;
-    list-style-type: none;
-    li {
-      display: inline-block;
-      a {
-        color: $black;
-        padding: 5px 9px;
-        letter-spacing: 2px;
-        &.active {
-        background-color: $primary;
-        color: $white;
-        }
+}
+ul.navigation {
+  padding-top: 12px;
+  font-size: 13px;
+  list-style-type: none;
+  li {
+    display: inline-block;
+    a {
+      color: $black;
+      padding: 5px 9px;
+      letter-spacing: 2px;
+      &.active {
+      background-color: $primary;
+      color: $white;
       }
     }
   }
 }
-.red {
-  border: 1px solid red;
+.hero {
+  position: relative;
+}
+.hero-features {
+  position: absolute;
+  border:1px solid red;
+  bottom:0;
+  left:200px;
+  width: 900px;
+}
+.feature-header {
+  padding: 60px 0;
+  background-color: $white;
+  display: inline-block;
+  width: 250px;
+  // float:right;
+  p {
+    text-align: center;
+  }
 }
