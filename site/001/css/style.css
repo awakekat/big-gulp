@@ -1,0 +1,38 @@
+/* === Start Custom Styles === */
+/* === Base Styles === */
+body {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegebility; }
+
+a:link, a:hover, a:visited, a.active {
+  text-decoration: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+header {
+  background: #fff;
+  color: #333333;
+  height: 80px;
+  font-size: 25px;
+  padding-top: 35px; }
+  header span {
+    color: #8DBDE3; }
+  header ul.navigation {
+    padding-top: 12px;
+    font-size: 13px;
+    list-style-type: none; }
+    header ul.navigation li {
+      display: inline-block; }
+      header ul.navigation li a {
+        color: #333333;
+        padding: 5px 9px;
+        letter-spacing: 2px; }
+        header ul.navigation li a.active {
+          background-color: #8DBDE3;
+          color: #fff; }
+
+.red {
+  border: 1px solid red; }

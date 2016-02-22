@@ -1,0 +1,49 @@
+@import "scss/helpers/vars";
+@import "scss/helpers/mixins";
+
+/* === Start Custom Styles === */
+/* === Base Styles === */
+
+body {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegebility;
+}
+
+a:link, a:hover, a:visited, a.active {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+header {
+  background: $white;
+  color: $black;
+  height: 80px;
+  font-size: 25px;
+  padding-top: 35px;
+  span {
+    color: $primary;
+  }
+  ul.navigation {
+    padding-top: 12px;
+    font-size: 13px;
+    list-style-type: none;
+    li {
+      display: inline-block;
+      a {
+        color: $black;
+        padding: 5px 9px;
+        letter-spacing: 2px;
+        &.active {
+        background-color: $primary;
+        color: $white;
+        }
+      }
+    }
+  }
+}
+.red {
+  border: 1px solid red;
+}
