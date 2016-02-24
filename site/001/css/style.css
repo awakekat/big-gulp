@@ -41,7 +41,11 @@ ul.navigation {
         color: #fff; }
 
 .hero {
-  position: relative; }
+  position: relative;
+  background: linear-gradient(rgba(25, 25, 25, 0.4), rgba(25, 25, 25, 0.4)), url(https://unsplash.it/1900/800?image=7) no-repeat center center;
+  background-size: cover;
+  height: 800px;
+  width: auto; }
 
 .hero-features {
   position: absolute;
@@ -61,3 +65,17 @@ ul.navigation {
   .feature-header p {
     font-size: 13px;
     color: #9B9B9B; }
+
+/* === FOOTER === */
+footer {
+  padding: 50px 0; }
+
+.footer-social ul {
+  list-style-type: none; }
+
+.footer-social li {
+  display: inline-block;
+  font-size: 20px; }
+
+.footer-social .fa {
+  padding: 0 5px; }
