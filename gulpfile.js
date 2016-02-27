@@ -24,7 +24,7 @@ var options     = {nspaces:2};
 
 // ===== Variable for output directories
 //var rootDir   = './';
-var outputDir   = './site/001';
+var outputDir   = './site/002';
 
 
 // ====== THE TASK LIST ========
@@ -107,7 +107,7 @@ gulp.task('browser-sync', ['jade','sass'], function() {
     browserSync.init([outputDir + './'], {
         // comment when using proxy
         port:8080,
-        server: {baseDir: "./site/001"}
+        server: {baseDir: "./site/002"}
         // uncomment when using proxy localhost
         //proxy: "localanchor.dev",
         //notify: true

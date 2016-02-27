@@ -22,17 +22,7 @@ img {
   height: auto;
 }
 header {
-  background: $white;
-  color: $black;
-  height: 80px;
-  font-size: 25px;
-  padding-top: 35px;
-  p {
-    font-family: $primary-font;
-  }
-  span {
-    color: $primary;
-  }
+
 }
 ul.navigation {
   padding-top: 12px;
@@ -53,38 +43,26 @@ ul.navigation {
 }
 .hero {
   position: relative;
-  background: linear-gradient(rgba(25, 25, 25, 0.4), rgba(25, 25, 25, 0.4)), url(https://unsplash.it/1900/800?image=7) no-repeat center center;
+  background: linear-gradient(rgba(6, 164, 157, 0.4), rgba(6, 164, 157, 0.4)), url(https://unsplash.it/1900/800?image=7) no-repeat center center;
   //background: url("https://unsplash.it/1900/800?image=7") center center;
   background-size: cover;
-  height: 800px;
+  height: 400px;
   width: auto;
-}
-.hero-features {
-  position: absolute;
-  //border-bottom:1px solid red;
-  bottom: 0;
-  left:200px;
-  width: 900px;
-}
-.feature-header {
-  padding: 30px 15px;
-  background-color: $white;
-  display: inline-block;
-  width: 250px;
-  margin-bottom: -1px;
-  // float:right;
-  h4 {
-    font-weight: $normal;
-    font-size: 26px;
-  }
-  p {
-    font-size: 13px;
-    color: $gray;
+  h1 {
+    color: $white;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 200px;
+    margin-top: 0;
   }
 }
+
+
 /* === FOOTER === */
 footer {
   padding: 50px 0;
+  background-color: #333;
+  color: #fff;;
 }
 .footer-social {
   ul {
@@ -97,4 +75,26 @@ footer {
   .fa {
     padding: 0 5px;
   }
+}
+
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: #ffffff;
+}
+
+
+
+
+.navbar-default {
+  border-color: #3f3f3f;
+  background-color: #3f3f3f;
+}
+
+
+
+
+
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
 }
