@@ -15,37 +15,55 @@ img {
   max-width: 100%;
   height: auto; }
 
-ul.navigation {
-  padding-top: 12px;
-  font-size: 13px;
-  list-style-type: none; }
-  ul.navigation li {
-    display: inline-block; }
-    ul.navigation li a {
-      color: #3F3F3F;
-      padding: 5px 9px;
-      letter-spacing: 2px; }
-      ul.navigation li a.active {
-        background-color: #8DBDE3;
-        color: #fff; }
+/* === NAVIGATION === */
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: #ffffff; }
+
+.navbar-default {
+  border-color: #3f3f3f;
+  background-color: #3f3f3f;
+  border-radius: 0px; }
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff; }
 
 .hero {
   position: relative;
-  background: linear-gradient(rgba(6, 164, 157, 0.4), rgba(6, 164, 157, 0.4)), url(https://unsplash.it/1900/800?image=7) no-repeat center center;
+  background: linear-gradient(rgba(6, 164, 157, 0.4), rgba(6, 164, 157, 0.4)), url(https://source.unsplash.com/ICW6QYOcdlg/1900x800) no-repeat center center;
   background-size: cover;
   height: 400px;
   width: auto; }
   .hero h1 {
     color: #fff;
     font-weight: 800;
+    font-size: 60px;
     text-align: center;
-    padding-top: 200px;
+    padding-top: 50px;
+    margin: 0; }
+  .hero h2 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
     margin-top: 0; }
+  .hero .phrase {
+    width: 335px;
+    margin: 25px auto 0 auto !important;
+    padding-left: 3px; }
+  .hero h3 {
+    color: #FFE89C;
+    font-weight: 500;
+    border-top: 3px solid #FFE89C;
+    border-bottom: 3px solid #FFE89C;
+    display: inline-block;
+    padding: 15px 0;
+    text-align: center; }
 
 /* === FOOTER === */
 footer {
   padding: 50px 0;
-  background-color: #333;
+  background-color: #3F3F3F;
   color: #fff; }
 
 .footer-social ul {
@@ -57,13 +75,3 @@ footer {
 
 .footer-social .fa {
   padding: 0 5px; }
-
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-  border-color: #ffffff; }
-
-.navbar-default {
-  border-color: #3f3f3f;
-  background-color: #3f3f3f; }
-
-.navbar-default .navbar-nav > li > a {
-  color: #fff; }
