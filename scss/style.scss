@@ -37,9 +37,10 @@ header {
   color: #fff;
 }
 
+/* === HEADER STYLES === */
 .hero {
   position: relative;
-  background: linear-gradient(rgba(6, 164, 157, 0.4), rgba(6, 164, 157, 0.4)), url(https://source.unsplash.com/ICW6QYOcdlg/1900x800) no-repeat center center;
+  background: linear-gradient(rgba(6, 164, 157, 0.4), rgba(6, 164, 157, 0.4)), url(../images/desktop.jpg) no-repeat center center;
   background-size: cover;
   height: 400px;
   width: auto;
@@ -60,20 +61,20 @@ header {
     margin-top: 0;
   }
   .phrase {
-    width: 335px;
-    //border: 1px solid red;
-    margin: 25px auto 0 auto !important;
-    padding-left: 3px;
+    text-align: center;
+    position: relative;
   }
   h3 {
     color: $yellow;
     font-weight: $bold;
-    border-top: 3px solid $yellow;
-    border-bottom: 3px solid $yellow;
+    font-size: 30px;
     display: inline-block;
     padding: 15px 0;
-
     text-align: center;
+    border-top: 3px solid $yellow;
+    border-bottom: 3px solid $yellow;
+    font-weight: $thick;
+    text-transform: uppercase;
   }
 }
 

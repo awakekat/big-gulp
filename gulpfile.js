@@ -120,7 +120,7 @@ gulp.task('watch', ['browser-sync'], function() {
     gulp.watch('jade/**/*.jade', ['jade']);
     gulp.watch('scss/**/*.scss', ['sass']);
     //gulp.watch('js/**/*.js', ['scripts']);
-    gulp.watch('outputDir/index.html').on('change', reload);
+    gulp.watch('./site/002/index.html').on('change', reload);
     //gulp.watch('**/*.php').on('change', reload);
     // gulp.watch('dist/**/*.js');
     //gulp.watch('dist/**/*.html');

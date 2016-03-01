@@ -27,9 +27,10 @@ img {
 .navbar-default .navbar-nav > li > a {
   color: #fff; }
 
+/* === HEADER STYLES === */
 .hero {
   position: relative;
-  background: linear-gradient(rgba(6, 164, 157, 0.4), rgba(6, 164, 157, 0.4)), url(https://source.unsplash.com/ICW6QYOcdlg/1900x800) no-repeat center center;
+  background: linear-gradient(rgba(6, 164, 157, 0.4), rgba(6, 164, 157, 0.4)), url(../images/desktop.jpg) no-repeat center center;
   background-size: cover;
   height: 400px;
   width: auto; }
@@ -48,17 +49,19 @@ img {
     text-align: center;
     margin-top: 0; }
   .hero .phrase {
-    width: 335px;
-    margin: 25px auto 0 auto !important;
-    padding-left: 3px; }
+    text-align: center;
+    position: relative; }
   .hero h3 {
     color: #FFE89C;
     font-weight: 500;
-    border-top: 3px solid #FFE89C;
-    border-bottom: 3px solid #FFE89C;
+    font-size: 30px;
     display: inline-block;
     padding: 15px 0;
-    text-align: center; }
+    text-align: center;
+    border-top: 3px solid #FFE89C;
+    border-bottom: 3px solid #FFE89C;
+    font-weight: 700;
+    text-transform: uppercase; }
 
 /* === FOOTER === */
 footer {
