@@ -27,6 +27,9 @@ img {
 .navbar-default .navbar-nav > li > a {
   color: #fff; }
 
+.navbar {
+  margin-bottom: 0px; }
+
 /* === HEADER STYLES === */
 .hero {
   position: relative;
@@ -62,6 +65,11 @@ img {
     border-bottom: 3px solid #FFE89C;
     font-weight: 700;
     text-transform: uppercase; }
+
+/* === CONTENT === */
+/* === ABOUT ME SECTION === */
+section.about-me {
+  background-color: #35A49D; }
 
 /* === FOOTER === */
 footer {

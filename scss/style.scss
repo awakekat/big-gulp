@@ -36,7 +36,9 @@ header {
 .navbar-default .navbar-nav > li > a {
   color: #fff;
 }
-
+.navbar {
+  margin-bottom: 0px;
+}
 /* === HEADER STYLES === */
 .hero {
   position: relative;
@@ -77,6 +79,16 @@ header {
     text-transform: uppercase;
   }
 }
+
+
+/* === CONTENT === */
+/* === ABOUT ME SECTION === */
+section.about-me {
+  background-color: $teal;
+}
+
+
+
 
 
 /* === FOOTER === */
