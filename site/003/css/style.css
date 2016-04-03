@@ -1,0 +1,199 @@
+/* === Start Custom Styles === */
+/* === Base Styles === */
+body {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegebility; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif; }
+
+a:link, a:hover, a:visited, a.active {
+  text-decoration: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* === NAVIGATION === */
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: #fff; }
+
+.navbar-default {
+  border-color: #fff;
+  background-color: #fff;
+  border-radius: 0px; }
+
+.navbar-default .navbar-nav > li > a {
+  color: #333; }
+
+.navbar {
+  margin-bottom: 0px; }
+
+.navbar-brand {
+  font-weight: bold;
+  color: #333; }
+
+/* === HEADER STYLES === */
+.hero {
+  position: relative;
+  background: url("../images/desktop.jpg") no-repeat center center;
+  background-size: cover;
+  height: 400px;
+  width: auto; }
+  .hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #002f4b, #1BBBF5);
+    opacity: .6; }
+  .hero .hero-text {
+    position: relative; }
+    .hero .hero-text h2 {
+      padding-top: 80px;
+      color: #fff;
+      font-weight: 300;
+      font-size: 30px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 0;
+      z-index: 98; }
+  .hero .phrase {
+    text-align: center;
+    position: relative; }
+  .hero h3 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 30px;
+    display: inline-block;
+    padding: 15px 0;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase; }
+
+.header-button {
+  margin: 20px auto 0 auto;
+  text-align: center;
+  width: 205px;
+  padding: 10px 15px;
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50px; }
+
+/* ====================== */
+/* === SECTION CONTENT - WHO WE ARE === */
+section.who-we-are {
+  padding: 35px 0; }
+  section.who-we-are h2 {
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid #1BBBF5;
+    width: 250px; }
+  section.who-we-are p {
+    color: #777;
+    text-align: center;
+    line-height: 1.5em; }
+  section.who-we-are .our-features {
+    padding-top: 50px; }
+    section.who-we-are .our-features .feature {
+      padding-top: 20px;
+      border: 1px solid #fff;
+      border-radius: 7px; }
+      section.who-we-are .our-features .feature:hover {
+        border: 1px solid #ccc; }
+      section.who-we-are .our-features .feature p {
+        font-size: 16px;
+        line-height: 1.5em;
+        padding: 15px 0; }
+    section.who-we-are .our-features h2 {
+      border-bottom: none; }
+  section.who-we-are .btn.btn-default {
+    margin: 0 auto;
+    background-color: #fff;
+    display: block;
+    width: 120px;
+    border-radius: 50px;
+    color: #1BBBF5;
+    border: 1px solid #1BBBF5;
+    position: relative;
+    bottom: -17px; }
+    section.who-we-are .btn.btn-default:hover {
+      background-color: #1BBBF5;
+      color: #fff; }
+
+/* ============================ */
+/* === SECTION CONTENT - PEOPLE === */
+.person-box-1 img, .person-box-2 img, .person-box-3 img, .person-box-4 img {
+  height: 200px; }
+
+.person-box-1 {
+  background-color: #FFCA62;
+  border-radius: 7px;
+  border-bottom: 5px solid #ffb016;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center; }
+
+.person-box-2 {
+  background-color: #C8DD66;
+  border-radius: 7px;
+  border-bottom: 5px solid #aeca2d;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center; }
+
+.person-box-3 {
+  background-color: #1BBBF5;
+  border-radius: 7px;
+  border-bottom: 5px solid #088cbb;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center; }
+
+.person-box-4 {
+  background-color: #5DDF94;
+  border-radius: 7px;
+  border-bottom: 5px solid #28c86b;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center; }
+
+.person-info {
+  border-top: 1px solid #fff; }
+
+.person-name {
+  margin-top: 10px; }
+
+/* ==================================== */
+/* === CONTENT === */
+/* === ABOUT ME SECTION === */
+section.about-me {
+  background-color: #ccc; }
+
+/* === FOOTER === */
+footer {
+  padding: 50px 0;
+  background-color: #3F3F3F;
+  color: #fff; }
+
+.footer-social ul {
+  list-style-type: none; }
+
+.footer-social li {
+  display: inline-block;
+  font-size: 20px; }
+
+.footer-social .fa {
+  padding: 0 5px; }

@@ -26,69 +26,169 @@ header {
 }
 /* === NAVIGATION === */
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-  border-color: #ffffff;
+  border-color: $white;
 }
 .navbar-default {
-  border-color: #3f3f3f;
-  background-color: #3f3f3f;
+  border-color: $white;
+  background-color: $white;
   border-radius: 0px;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #fff;
+  color: #333;
 }
 .navbar {
   margin-bottom: 0px;
 }
+.navbar-brand {
+  font-weight: bold;
+  color: #333;
+}
+
 /* === HEADER STYLES === */
 .hero {
   position: relative;
-  background: linear-gradient(rgba(6, 164, 157, 0.4), rgba(6, 164, 157, 0.4)), url(../images/desktop.jpg) no-repeat center center;
+  background: url('../images/desktop.jpg') no-repeat center center;
   background-size: cover;
   height: 400px;
   width: auto;
-  h1 {
-    color: $white;
-    font-weight: 800;
-    font-size: 60px;
-    text-align: center;
-    padding-top: 50px;
-    margin: 0;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #002f4b, $blue);
+    //background: radial-gradient(ellipse at center, transparent 0% ,#222 50%, #000 100%);
+    opacity: .6; 
   }
-  h2 {
-    color: $white;
-    font-weight: $thin;
-    font-size: 30px;
-    text-transform: uppercase;
-    text-align: center;
-    margin-top: 0;
+  .hero-text {
+    position: relative;    
+    h2 {
+      padding-top: 80px;
+      color: $white;
+      font-weight: $thin;
+      font-size: 30px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 0;
+      z-index: 98;
+    }
   }
   .phrase {
     text-align: center;
     position: relative;
   }
   h3 {
-    color: $yellow;
+    color: $white;
     font-weight: $bold;
     font-size: 30px;
     display: inline-block;
     padding: 15px 0;
     text-align: center;
-    border-top: 3px solid $yellow;
-    border-bottom: 3px solid $yellow;
     font-weight: $thick;
     text-transform: uppercase;
   }
 }
+.header-button {
+  margin: 20px auto 0 auto;
+  text-align: center;
+  width: 205px;
+  padding: 10px 15px;
+  color: $white;
+  font-weight: bold;
+  position: relative;
+  z-index: 100;
+  background-color: rgba(0, 0 ,0 , 0.3);
+  border: 3px solid rgba(255,255,255, 0.5);
+  border-radius: 50px;
+}
+/* ====================== */
 
+/* === SECTION CONTENT - WHO WE ARE === */
+section.who-we-are {
+  padding: 35px 0;
+  h2 {
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid $blue;  
+    width: 250px;
+  }
+  p {
+    color: #777;
+    text-align: center;
+    line-height: 1.5em;
+  }
+  .our-features {
+    padding-top: 50px;
+    .feature {
+      padding-top: 20px;
+      border: 1px solid $white;
+      border-radius: 7px;
+      &:hover {
+        border: 1px solid #ccc;
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.5em;
+        padding: 15px 0;
+      }
+    }
+    h2 {
+      border-bottom: none;
+    }
+  }
+  .btn.btn-default {
+    margin: 0 auto;
+    background-color: $white;
+    display:block;
+    width: 120px;
+    border-radius: 50px;
+    color: $blue;
+    border: 1px solid $blue;
+    position: relative;
+    bottom: -17px;
+    &:hover {
+      background-color: $blue;
+      color: $white;
+    }
+  }
+}
 
+/* ============================ */
+/* === SECTION CONTENT - PEOPLE === */
+.person-box-1 img,.person-box-2 img,.person-box-3 img,.person-box-4 img {
+  height: 200px
+}
+.person-box-1 {
+  @include person-box($yellow-orange);
+  text-align: center;
+}
+.person-box-2 {
+  @include person-box($lime);
+  text-align: center;
+}
+.person-box-3 {
+  @include person-box($blue);
+  text-align: center;
+}
+.person-box-4 {
+  @include person-box($green);
+  text-align: center;
+}
+.person-info {
+  border-top: 1px solid $white;
+}
+.person-name {
+  margin-top: 10px;
+}
+/* ==================================== */
 /* === CONTENT === */
 /* === ABOUT ME SECTION === */
 section.about-me {
-  background-color: $teal;
+  background-color: #ccc;
 }
-
-
-
 
 
 /* === FOOTER === */

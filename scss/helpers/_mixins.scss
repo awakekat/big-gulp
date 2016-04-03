@@ -1,16 +1,8 @@
-@mixin button {
-  background-color: $primary;
-  font-size: 20px;
+@mixin person-box ($bgc){
+  background-color: $bgc;
+  border-radius: 7px;
+  border-bottom: 5px solid darken($bgc, 15%);
+  margin-bottom: 20px;
   color: $white;
-  display: inline-block;
-  padding: 6px 29px;
-  font-family: $serif-font;
-  font-weight: $regular;
-  &:hover {
-    background-color: lighten($primary, 10%);
-    color: $white;
-  }
-  &:visited {
-    color: $white;
-  }
+  font-weight: bold;
 }

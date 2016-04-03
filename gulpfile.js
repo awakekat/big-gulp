@@ -9,9 +9,9 @@ var imagemin    = require('gulp-imagemin');
 var notify      = require('gulp-notify');
 var cssmin      = require('gulp-minify-css');
 var html2jade   = require('gulp-html2jade');
-var connect     = require('gulp-connect');
-var browserSync = require('browser-sync').create(),
-    reload      = browserSync.reload;
+//var connect     = require('gulp-connect');
+//var browserSync = require('browser-sync').create(),
+    //reload      = browserSync.reload;
 var plumberErrorHandler = { errorHandler: notify.onError({
     title: 'Gulp',
     message: 'Error: <%= error.message %>'
@@ -24,7 +24,7 @@ var options     = {nspaces:2};
 
 // ===== Variable for output directories
 //var rootDir   = './';
-var outputDir   = './site/002';
+var outputDir   = './site/003';
 
 
 // ====== THE TASK LIST ========
@@ -41,7 +41,7 @@ gulp.task('jade', function() {
         .pipe(gulp.dest(outputDir))
         //.pipe(gulp.dest('./'))
         .pipe(notify('Jade to HTML - Successful'))
-        .pipe(browserSync.reload({stream: true}));
+        //.pipe(browserSync.reload({stream: true}));
 });
 
 
@@ -103,27 +103,28 @@ gulp.task('h2j', function () {
 });
 
 // ===== Browser Sync
-gulp.task('browser-sync', ['jade','sass'], function() {
-    browserSync.init([outputDir + './'], {
-        // comment when using proxy
-        port:8080,
-        server: {baseDir: "./site/002"}
-        // uncomment when using proxy localhost
-        //proxy: "localanchor.dev",
-        //notify: true
-    });
-});
+// gulp.task('browser-sync', ['jade','sass'], function() {
+//     browserSync.init([outputDir + './'], {
+//         // comment when using proxy
+//         port:8080,
+//         server: {baseDir: "./site/003"}
+//         // uncomment when using proxy localhost
+//         //proxy: "localanchor.dev",
+//         //notify: true
+//     });
+// });
 
 // ====== Watch Task with 'gulp watch' after starting browser-sync
-gulp.task('watch', ['browser-sync'], function() {
+gulp.task('watch', function() {
 
     gulp.watch('jade/**/*.jade', ['jade']);
     gulp.watch('scss/**/*.scss', ['sass']);
     //gulp.watch('js/**/*.js', ['scripts']);
-    gulp.watch('./site/002/index.html').on('change', reload);
+    //gulp.watch('./site/003/index.html').on('change', reload);
     //gulp.watch('**/*.php').on('change', reload);
     // gulp.watch('dist/**/*.js');
     //gulp.watch('dist/**/*.html');
+    //between watch and function = ['browser-sync'],
 
 });
 
