@@ -60,10 +60,10 @@ header {
     left: 0;
     background-image: linear-gradient(to bottom right, #002f4b, $blue);
     //background: radial-gradient(ellipse at center, transparent 0% ,#222 50%, #000 100%);
-    opacity: .6; 
+    opacity: .6;
   }
   .hero-text {
-    position: relative;    
+    position: relative;
     h2 {
       padding-top: 80px;
       color: $white;
@@ -109,10 +109,11 @@ header {
 section.who-we-are {
   padding: 35px 0;
   h2 {
-    margin: 0 auto;
+    margin: 0 auto 15px auto;
+    padding-bottom: 15px;
     font-size: 20px;
     text-align: center;
-    border-bottom: 1px solid $blue;  
+    // border-bottom: 1px solid $blue;
     width: 250px;
   }
   p {
