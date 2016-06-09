@@ -1,40 +1,23 @@
-@import "scss/helpers/vars";
-@import "scss/helpers/mixins";
-
 /* === Start Custom Styles === */
 /* === Base Styles === */
-
 body {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizelegebility;
-}
+  text-rendering: optimizelegebility; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $primary-font;
-}
+  font-family: "Ubuntu", sans-serif; }
 
 a:link, a:hover, a:visited, a.active {
-  text-decoration: none;
-}
+  text-decoration: none; }
+
 img {
   max-width: 100%;
-  height: auto;
-}
-header {
-
-}
+  height: auto; }
 
 /* === CONTENT === */
 .content {
-  background-color: $gray;
-  min-height:100%;
-}
-
-
-
+  background-color: #9B9B9B;
+  min-height: 100%; }
 
 /* === FOOTER === */
-footer {
-
-}
