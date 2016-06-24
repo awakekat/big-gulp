@@ -1,3 +1,0 @@
-{
-    "globals": ["./scss/helpers/vars.scss", "./scss/*.scss"]
-}
