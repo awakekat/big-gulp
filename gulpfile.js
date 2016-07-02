@@ -2,25 +2,18 @@
 var gulp        = require('gulp');
 
 // ===== Include Plugins
-var jade        = require('gulp-jade');
+//var jade      = require('gulp-jade');
+var livereload  = require('gulp-livereload');
 var sass        = require('gulp-sass');
 var plumber     = require('gulp-plumber');
 var imagemin    = require('gulp-imagemin');
 var notify      = require('gulp-notify');
 var cssmin      = require('gulp-minify-css');
-var html2jade   = require('gulp-html2jade');
-//var connect     = require('gulp-connect');
-//var browserSync = require('browser-sync').create(),
-    //reload      = browserSync.reload;
-var plumberErrorHandler = { errorHandler: notify.onError({
-    title: 'Gulp',
-    message: 'Error: <%= error.message %>'
-    })
-};
+//var html2jade   = require('gulp-html2jade');
 
 
 // ===== Options is for the Jade output. 2 spaces for tab.
-var options     = {nspaces:2};
+//var options     = {nspaces:2};
 
 // ===== Variable for output directories
 //var rootDir   = './';
@@ -31,29 +24,32 @@ var outputDir   = './site/003';
 // Comment out the notifys if they bug ya!
 
 // ====== Jade Task
-gulp.task('jade', function() {
-    return gulp.src(['./jade/**/*.jade', '!./jade/{templates,templates/**/*,includes,convert}/*'])
-        .pipe(plumber(plumberErrorHandler))
-        .pipe(jade({
-          pretty: true
-        }))
-        //.pipe(gulp.dest('./dist/'))
-        .pipe(gulp.dest(outputDir))
-        //.pipe(gulp.dest('./'))
-        .pipe(notify('Jade to HTML - Successful'))
-        //.pipe(browserSync.reload({stream: true}));
-});
+// gulp.task('jade', function() {
+//     return gulp.src(['./jade/**/*.jade', '!./jade/{templates,templates/**/*,includes,convert}/*'])
+//         .pipe(plumber(plumberErrorHandler))
+//         .pipe(jade({
+//           pretty: true
+//         }))
+//         .pipe(gulp.dest('./dist/'))
+//         .pipe(gulp.dest(outputDir))
+//         .pipe(gulp.dest('./'))
+//         .pipe(notify('Jade to HTML - Successful'))
+// });
 
 
 // ====== Compile SCSS
 gulp.task('sass', function() {
-    gulp.src('scss/**/*.scss')
+    gulp.src('./scss/**/*.scss')
         .pipe(plumber(plumberErrorHandler))
         .pipe(sass())
         //.pipe(gulp.dest('css/'))
         .pipe(gulp.dest(outputDir + '/css'))
-        .pipe(notify('SCSS to CSS - Successful'))
+        .pipe(livereload())
+        .pipe(notify('SCSS to CSS - Successful'));
 });
+
+
+
 
 // ===== Finalize Concatenate & Minify JS with 'gulp build'
 // gulp.task('scripts', function() {
@@ -116,17 +112,14 @@ gulp.task('h2j', function () {
 
 // ====== Watch Task with 'gulp watch' after starting browser-sync
 gulp.task('watch', function() {
-
-    gulp.watch('jade/**/*.jade', ['jade']);
-    gulp.watch('scss/**/*.scss', ['sass']);
+    livereload.listen();
+    //gulp.watch('jade/**/*.jade', ['jade']);
+    gulp.watch('./scss/**/*.scss', ['sass']);
     //gulp.watch('js/**/*.js', ['scripts']);
-    //gulp.watch('./site/003/index.html').on('change', reload);
-    //gulp.watch('**/*.php').on('change', reload);
-    // gulp.watch('dist/**/*.js');
-    //gulp.watch('dist/**/*.html');
-    //between watch and function = ['browser-sync'],
+    glup.watch(['./css/style.css'], function (files){livereload.changed(files)
+    });
 
 });
 
 // ===== Default Task
-gulp.task('default', ['watch', 'h2j'] );
+gulp.task('default', ['watch'] );
